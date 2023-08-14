@@ -11,21 +11,21 @@
         }
 
         body {
-                background: linear-gradient(-45deg, #f5f5dc, #ffffff);
-                background-size: 4000% 4000%;
-                animation: wave 8s ease infinite;
+            position: relative;
+            color:rgb(255, 255, 255)
         }
 
-        @keyframes wave {
-            0% {
-                background-position: 0% 50%;
-            }
-            50% {
-                background-position: 100% 50%;
-            }
-            100% {
-                background-position: 0% 50%;
-            }
+        #video-bg {
+            position: fixed;
+            top: 0;
+            left: 0;
+            min-width: 100%;
+            min-height: 100%;
+            z-index: -1;
+        }
+
+        #mainTitle{
+
         }
     </style>
 
@@ -47,6 +47,11 @@
     <br>
 
     <img src="Foto para perfil.jpg" width="200px"> 
+
+    <video autoplay muted loop id="video-bg">
+        <source src="background.mp4" type="video/mp4">
+    </video>
+    
 
     <p>
         At 33 years old and passionate about technological challenges, I'm ready to join your team. As an enthusiast for problem-solving and programming, I'm excited to bring my skills to your company.
