@@ -8,6 +8,19 @@
 let valor = 30; //number
 let pi = 3.1415; //number
 let msg = "hello world"; //string
-let boolean = true;
+let boolean = true; //boolean
+let nulo = null; //considera objeto null
+let ind  //undefined
 
-console.log(typeof valor, typeof pi, typeof msg, typeof boolean);
+console.log(typeof valor, typeof pi, typeof msg, typeof boolean, typeof nulo, typeof ind);
+
+//Operações aritmética
+//Atribuição =
+//Operadores
+
+console.log(2+3); //soma
+console.log(4-1); //subtração 
+console.log(3*4); //multiplicação
+console.log(2**3); //portência
+console.log(72/8); //divisão
+console.log(5%2); //resto da divisão
