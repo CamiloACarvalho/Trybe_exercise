@@ -31,3 +31,7 @@ console.log(5%2); //resto da divisão
 // 3 === 3 ou 3 === '3' para a primeira comparação é true porque os valores são iguais e os tipos também number e number. Já a segunda comparação é false, porque o valor é igual, mas o tipo é diferente, number e string
 // == | === | > | < | >= | <= | !=
 
+//Operadores lógicos -> São ligados a valores boleanos (condições verdadeiras ou falasas)
+// && (and) - Todas as condições têm que ser verdadeira
+// || (or) - Pelo menos uma das condições tem que ser verdadeiras
+// ! (not) - Nega um valor vadadeiro
