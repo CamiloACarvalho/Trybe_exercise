@@ -24,3 +24,10 @@ console.log(3*4); //multiplicação
 console.log(2**3); //portência
 console.log(72/8); //divisão
 console.log(5%2); //resto da divisão
+
+//Comparação
+//A diferenã entre == e === é: 
+//3 == 3 ou 3 == '3' verifica se os valores são iguais. Nesse caso para ambas comparações é true
+// 3 === 3 ou 3 === '3' para a primeira comparação é true porque os valores são iguais e os tipos também number e number. Já a segunda comparação é false, porque o valor é igual, mas o tipo é diferente, number e string
+// == | === | > | < | >= | <= | !=
+
