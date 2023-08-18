@@ -115,7 +115,7 @@ if (teste > 10){
 
 checagem = teste >10 ? console.log(true) : console.log(false);
 
-//Testando um problema que pensei hoje no trabalho
+//Testando um problema que pensei hoje no trabalho e fazendo uma introdução para a aula de hoje 18/08
 
 let money = [1.23,4.53,0.59,90.32,66.52,3.78,563.23,223.65,9.95];
 
