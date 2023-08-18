@@ -115,3 +115,18 @@ if (teste > 10){
 
 checagem = teste >10 ? console.log(true) : console.log(false);
 
+//Testando um problema que pensei hoje no trabalho
+
+let money = [1.23,4.53,0.59,90.32,66.52,3.78,563.23,223.65,9.95];
+
+let fob = 293.89;
+
+let valorDaNf=0;
+
+for (let i =0; i<=8; i++){
+    valorDaNf = valorDaNf + money[i];
+}
+
+console.log(valorDaNf);
+
+//até aqui ta funcionando heheh. Depois dou continuidade
