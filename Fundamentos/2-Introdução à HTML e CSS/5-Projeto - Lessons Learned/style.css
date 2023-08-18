@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(253, 251, 251);
+
+}
+
+#cabecalho {
+    width: 100%;
+    background-color: transparent;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+#titulo {
+    font-family: 'Barriecito', cursive;
+    background-color: rgb(31, 201, 8);
+    border-radius: 15px;
+    padding: 25px;
+    text-align: center;
+    font-size: 3em;
+}
+
+#body {
+    font-family: 'Playfair Display', serif;
+    clear: both;
+    margin-top: 250px;
+}
+
+#minha_foto {
+    width: 30%;
+}
+
+#textos {
+    margin-left: 40px;
+}
+
+.lado-esquerdo,
+.lado-direito {
+    /* float: left; */
+    display: inline-block;
+    /* clear: left; */
+    padding: 5px;
+    width: 45%;
+    /* margin-left: 40px; */
+    font-size: 1.1em;
+    text-align: justify;
+    box-sizing: border-box;
+}
+
+
+
+#licoes_aprendidas,
+#licoes_a_aprender {
+    padding: 20px;
+    margin-right: 100px;
+    display: inline-block;
+    width: 30%;
+
+}
+
+
+#licoes {
+    text-align: center;
+    margin-top: 40px;
+}
+
+#rodape {
+    padding: 20px;
+    text-align: center;
+}
+
+#rodape h2,
+nav {
+    margin-bottom: 10px;
+}
+
+#rodape nav a {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+#rodape nav a img {
+    width: 30px;
+    height: 30px;
+    vertical-align: middle;
+}
+
+#rodape table {
+    width: 100%;
+    border: solid;
+    border-radius: 10px;
+    background-color: transparent;
+}
+
+main {
+    margin-top: 120px;
+}
