@@ -14,8 +14,16 @@ console.log(nomes[1]); //Buscar o itemm na posição 1, neste caso Geizianne
 //Para exibir o nome de todos dentro do array, teria que criar 5 linhas, cada linha um console.log com o índice diferente para acessar todos os nomes
 //Para facilitar esse trabalho utilizamos o FOR
 
-for(let i =0; i<nomes.length ; i++){
+for(let i =0; i<nomes.length ; i+=1){
     console.log(nomes[i]);
 }
 
 //Para acessar o último número do Array, utiliza length - 1
+//Não usa ++. Agora utiliza-se: i += 1
+//Como usar o debug (seta com joaninha)
+
+//Template Literals ou string literals (é uma forma de juntar strings)
+console.log(`a soma de 2+2 = ${2+2}`);
+console.log(`multiplicação de 3x5 = ${3*5}`);
+
+//Essa é o template literals
