@@ -64,6 +64,12 @@ for(let num =0 ; num <= 5; num +=1){
     }
 }
 
+megaSena.sort(function(a, b) {
+
+    return a - b;
+
+  });
+
 console.log(megaSena);
 
 
