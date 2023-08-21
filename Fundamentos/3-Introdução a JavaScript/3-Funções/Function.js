@@ -45,3 +45,20 @@ console.log(boasVindas('World'));
 
 //A ideia de usar o arrow é deixar o código mais simples e limpo
 
+//PARA O MEU CÓDIGO EM JAVA QUE CRIEI UMA CALCULADORA CIENTÍFICA, 
+//UTILIZAR A FUNÇÃO. POIS QUANDO DIGITAR +, POSSO CHAMAR A FUNÇÃO SOMA, 
+//E COLOCAR O '+' COMO PARÂMETRO. PENSAR NISSO COM CARINHO
+
+//Exemplo de como fazer a calculadora
+
+const somar = (valor1,valor2) => {
+    if (typeof valor1 === 'number' && typeof valor2 ==='number'){
+        return valor1+valor2;
+    }else{
+        return `Informe um valor válido!`;
+    }
+}
+
+console.log(somar(2.43,4));
+
+//Por boas práticas o ideial é ter no máximo 5 parâmetros
