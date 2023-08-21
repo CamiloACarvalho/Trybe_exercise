@@ -24,3 +24,24 @@ console.log(boasVindas('World'));
 
 //Veja que uma função serviu para dar boas vindas a diversas pessoas
 
+//Criando ARROW FUNCTION
+//1) Não utiliza function, vc passa a criar uma variável constante, logo sempre começa por const
+//2) O nome da Arrow
+//3) O símbolo de =
+//4) O parâmetro
+//5) Arrow => setas
+//6) A caixa da função/arrow {}
+//7) Criar um return se necessário
+
+const boasVindas = (nomePessoa) => {
+    return `Olá ${nomePessoa}, seja bem vindo(a)`;
+}
+
+//Chamando a arrow function
+console.log(boasVindas('Camilo'));
+console.log(boasVindas('Geizianne'));
+console.log(boasVindas('Enza'));
+console.log(boasVindas('World'));
+
+//A ideia de usar o arrow é deixar o código mais simples e limpo
+
