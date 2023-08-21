@@ -28,6 +28,8 @@ console.log(`multiplicação de 3x5 = ${3*5}`);
 
 //Essa é o template literals
 
+//DAQUI PRA FRENTE FOI ALGO QUE INVENTEI NO FINAL DA AULA E FUI DANDO CORPO A ELA. A IDEIA AGORA É FAZER UM HTML E CSS 
+
 //Número para jogar na mega sena
 let megaSena = [];
 let random;
