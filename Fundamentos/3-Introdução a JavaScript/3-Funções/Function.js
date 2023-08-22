@@ -62,3 +62,37 @@ const somar = (valor1,valor2) => {
 console.log(somar(2.43,4));
 
 //Por boas práticas o ideial é ter no máximo 5 parâmetros
+
+const itens = ['TV Samsung 55"', 'Sofá 3 lugares', 'Microondas', 'Amortecedor de direção', 'Macacão Daynese', 'Bota Daynese', 'Capacete HJC', 'Capacete Ruroc'];
+
+//array.push serve para adicionar itens à arrays
+
+const addItens = (newItem) => {
+    itens.push(newItem);
+}
+
+addItens('Aditivos');
+
+console.log (itens);
+
+//Para adicionar vários itens, criaremos um FOR
+
+const carrinho = [];
+
+const adicionarItens = (novosItens) => {
+    for (let index = 0; index < novosItens.length; index +=1 ){
+        
+        const elementos = novosItens[index];
+
+        carrinho.push(elementos);
+    }
+}
+
+const totalDeProdutos = () =>{
+    return carrinho.length; //Dica para o projeto do mercado
+}
+
+adicionarItens (['Amortecedor de direção', 'Macacão Daynese', 'Bota Daynese', 'Capacete HJC', 'Capacete Ruroc']);
+
+console.log(carrinho);
+console.log(totalDeProdutos());
