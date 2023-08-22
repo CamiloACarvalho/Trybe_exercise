@@ -96,3 +96,23 @@ adicionarItens (['Amortecedor de direção', 'Macacão Daynese', 'Bota Daynese',
 
 console.log(carrinho);
 console.log(totalDeProdutos());
+
+//Fazendo exercícios
+//Função que soma todos os valores de um array
+
+const valores = [99, 150, 23.50, 32.94, 90.4, 10.2, 1.23, 0.99, 8.43, 100];
+
+const totalDoCarrinho =() => {
+
+    let contador =0;
+
+    for (let i = 0; i < valores.length; i +=1){
+
+        contador = contador + valores[i];
+
+    }
+
+    return contador;
+}
+
+console.log(totalDoCarrinho());
