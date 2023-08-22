@@ -45,4 +45,16 @@ person.hobbies.push('Jogar'); // Push é função de array, addicionar algo ao f
 console.log(person);
 
 // Métodos para Objetos
+    // Key = retornar as chaves
+    // Values = retorna os valores
+    // Entries = retorna todas as entradas (keys e values)
+
+console.log(Object.keys(person)); // Retornar um array
+console.log(Object.values(person)); // Retornar um array
+console.log(Object.entries(person)); // Retornar um array
+
+//Logo, podemos aplicar as funções de array
+
+
+
 
