@@ -14,28 +14,25 @@ Nossa jornada começa com os **Fundamentos**. Aqui, vamos construir nossa base s
 
 ## 🎨 Front-End
 
-No mundo do **Front-End**, é onde a mágica acontece! Vamos dar vida às nossas criações, criando interfaces incríveis que farão os olhos dos usuários brilharem. Com HTML, CSS e um toque de JavaScript, transformaremos linhas de código em experiências visuais deslumbrantes. ✨🖼️
+No mundo do **Front-End**, é onde a mágica acontece! Vamos dar vida às nossas criações, criando interfaces incríveis que farão os olhos dos usuários brilharem.✨🖼️
 
 ## ⚙️ Back-End
 
-Agora, nos aventuramos nas profundezas do **Back-End** - onde a verdadeira bruxaria acontece! Com bancos de dados e lógica complexa, criaremos as engrenagens por trás das cortinas. Prepare-se para desvendar mistérios e criar sistemas que farão os dados dançarem ao nosso comando. 🧙‍♂️🕸️
+Agora, nos aventuramos nas profundezas do **Back-End** - onde a verdadeira bruxaria acontece! Com bancos de dados e lógica complexa, criaremos as engrenagens por trás das cortinas. 🧙‍♂️🕸️
 
 ## 🧬 Ciências da Computação
 
-E agora, um pouco de **Ciências da Computação** para dar aquele toque de sabedoria extra. Algoritmos, estruturas de dados e complexidade - é como decifrar enigmas! Estaremos mergulhando fundo para entender como os computadores pensam e executam suas tarefas, como verdadeiros cientistas loucos. 🔬🤯
+E agora, um pouco de **Ciências da Computação** para dar aquele toque de sabedoria extra. Algoritmos, estruturas de dados e complexidade - é como decifrar enigmas! 🔬🤯
 
 ## 🌟 Objetivo
 
-Este repositório é como um diário de bordo da minha jornada para me tornar um super programador. Cada commit representa um passo em direção ao meu sonho de criar as próximas maravilhas tecnológicas. Estou animado para compartilhar meu crescimento e progresso ao longo do curso e, quem sabe, inspirar outros a embarcarem nesta emocionante aventura também. 🌠🚴‍♂️
+Este repositório é como um diário de bordo da minha jornada para me tornar um super programador. Estou animado para compartilhar meu crescimento e progresso ao longo do curso e, quem sabe, inspirar outros a embarcarem nesta emocionante aventura também. 🌠🚴‍♂️
 
 ## 🎉 Vamos Nessa!
 
-Seja bem-vindo para conferir meus códigos, rir com meus comentários engraçados nos commits e compartilhar essa jornada incrível comigo. Vamos codar, aprender e crescer juntos! 🚀👨‍💻
+Seja bem-vindo para conferir meus códigos, commits e compartilhar. Vamos codar, aprender e crescer juntos! 🚀👨‍💻
 
 ---
-
-*Este README é melhor visualizado com a fonte [Nome da Fonte Legal](link_da_fonte) para a melhor experiência possível.*
-
 
 <div align = "center">
   
