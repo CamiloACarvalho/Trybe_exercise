@@ -1,32 +1,90 @@
-<H2> LOGO MENOS VOU ESCREVER TRANSCREVER MEUS RESUMOS AQUI PARA COMPARTILHAR UM POUCO DOS MEUS ESTUDOS <H2>
-.
-.
-.
- Entendendo o Markdown
+# Portfólio de Desenvolvimento - 📊💻
 
-O README de um repositório é sempre em Markdown, sendo assim na hora de criar o seu você deve usar a extensão .md. Veja abaixo o que cada código presente nos templates de exemplo significa e como você pode personalizá-lo.
-Títulos
+Bem-vindo ao meu repositório cheio de aprendizado e progresso no mundo da programação! 🚀
 
-    #, ##, #####: Título, quanto mais # tiverem menor será a fonte. O mínimo para um título é # (um #) e o máximo ###### (seis #);
+## Resumos dos Fundamentos 💡
 
-Links
+**Kernel** – Imagine o kernel como o cérebro do sistema operacional, a ponte entre hardware e software, gerenciando memória, processos e arquivos. 🧠💾
 
-    [](): É um texto-âncora, dentro dos [] você adiciona a palavra/frase que será vista e dentro dos () o link que você deseja que ao clicar na palavra/frase ocorra o redirecionamento;
-        [SeuNomeAqui](LinkDoSeuLinkedinAqui): Texto-âncora com o seu nome apontando para o seu Likedin;
-        [Projeto - NomeDoProjeto](): Texto-âncora com o nome do projeto, que já consta no exemplos, apontando para onde você mantém o projeto em questão.
+**Shell** – O shell é a interface entre você e o sistema operacional. Ele recebe comandos, interpreta e executa, com dialetos como SH, BASH e ZSH. 🐚📜
 
-Tópicos
+**Aplicativos** – São os programas que executam tarefas específicas, dando vida às nossas interações digitais. 📦💻
 
-    -: Tópico de uma lista não ordenada;
+**Processos** – Cada comando é um processo com um identificador único (PID) e informações sobre o que está fazendo. 🔄🔮
 
-    - [ ]: Checkbox vazio;
-        - [ ] SEÇÃO-DIA: Checkbox de um dia que você ainda não fez, você deve manté-lo dessa forma enquanto ainda não tiver passado pelo dia em questão;
+**Arquivos** – No Unix, tudo é tratado como arquivo, desde programas até diretórios. 🗂️📂
 
-    - [X]: Checkbox cheio;
-        - [X] SEÇÃO-DIA: Checkbox de um dia que você já fez, você deve manté-lo dessa forma após ter passado pelo dia em questão;
+### Comandos Mágicos do Zsh 🪄
 
-    :white_check_mark:: Emoji de ✅, deve ser adicionado na frente do título de um módulo após a sua conclusão;
+| Comando    | Descrição                                      |
+| ---------- | ---------------------------------------------- |
+| `ls`       | Lista os arquivos e diretórios.                |
+| `cd`       | Muda o diretório atual.                        |
+| `mkdir`    | Cria um novo diretório.                        |
+| `echo`     | Exibe uma mensagem ou variável.                |
+| `cp`       | Copia arquivos ou diretórios.                  |
+| `mv`       | Move ou renomeia arquivos.                     |
+| `rm`       | Remove arquivos ou diretórios.                 |
+| `touch`    | Cria um novo arquivo vazio.                    |
+| `cat`      | Exibe o conteúdo de um arquivo.                |
+| `grep`     | Procura padrões em arquivos.                   |
+| `find`     | Busca arquivos e diretórios.                   |
+| `chmod`    | Altera permissões de arquivos.                 |
+| `chown`    | Altera o proprietário de arquivos.             |
+| `ps`       | Exibe processos em execução.                  |
+| `kill`     | Finaliza processos.                           |
+| `top`      | Exibe informações sobre os processos.         |
+| `nano`     | Abre um editor de texto simples.               |
+| `curl`     | Faz requisições HTTP.                         |
+| `wget`     | Baixa arquivos da internet.                   |
+| `scp`      | Copia arquivos via SSH.                       |
+| `ssh`      | Acessa um servidor remoto via SSH.            |
+| `tar`      | Comprime e descomprime arquivos.              |
+| `zip`      | Cria arquivos compactados .zip.               |
+| `unzip`    | Extrai arquivos compactados .zip.             |
+| `df`       | Exibe espaço em disco.                       |
+| `du`       | Mostra o uso de espaço por arquivos.         |
 
-    :hourglass_flowing_sand:: Emoji de ⏳, deve ser mantido na frente do título de todos os módulos que ainda não foram concluídos, isso conclui o módulo em que você se encontra.
+Esses encantamentos do Zsh vão transformar você em um mestre do terminal! 🌟💻
 
-Se quiser entender melhor como funciona e ver outros exemplos, confira os links na seção de Recursos Adicionais.
+## Dicas Mágicas para Agilizar sua Vida de Programador 🧙‍♂️
+
+1. **Comando `touch`** - Crie arquivos mágicos.
+   Use `touch nome_do_arquivo.formato_do_arquivo` para criar arquivos. Experimente `touch list{1..3}.txt` para criar vários arquivos numerados!
+
+2. **Comando `mkdir`** - Faça pastas aparecerem como coelhos da cartola.
+   Utilize `mkdir "nome_da_pasta"` para criar pastas. Não se esqueça das aspas se houver espaço no nome!
+
+3. **Comando `ls`** - Revele os tesouros do diretório.
+   Use `ls` para listar itens visíveis e `ls -a` para mostrar os ocultos também.
+
+4. **Comando `cd`** - Navegue como um explorador digital.
+   Pule entre pastas com `cd nome_do_diretório`. As aspas protegem nomes com espaço!
+
+5. **Comando `..`** - Volte à sua última localização.
+   Digite `..` para retornar à pasta anterior.
+
+6. **Comando `cat`** - Adicione sua magia aos arquivos.
+   Use `cat > nome_do_arquivo.formato_do_aqruivo` e solte sua criatividade. Pressione Ctrl + D para encerrar.
+
+7. **Comando `grep`** - Encontre suas respostas escondidas.
+   Descubra comandos secretos: `grep "valor procurado" "arquivo onde será feito a busca"`.
+
+8. **Comando `sort`** - Organize seus feitiços em ordem.
+   Comande o caos com `sort`, colocando suas listas em ordem crescente.
+
+9. **Caractere `|` (pipe)** - Junte encantamentos para um grande ritual.
+   Use o `|` para juntar resultados de um comando com outro. Exemplo: `grep J List_name.txt | sort`.
+
+10. **Comando `history`** - Reviva sua jornada.
+    Explore o `history` para ver seus feitiços passados: `history | tail`.
+
+11. **Comando `rm`** - Faça desaparecer os feitiços errados.
+    Use `rm nome_do_arquivo.extensão` para remover arquivos.
+
+12. **Comando `rmdir`** - Dissipe os reinos de pastas.
+    Comande `rmdir nome_da_pasta` para remover pastas vazias.
+
+---
+
+*Desbrave o mundo da programação com essas dicas mágicas e torne-se um verdadeiro feiticeiro digital!*
