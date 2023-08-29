@@ -2,8 +2,8 @@
 
 Para linkar o JavaScript com HTML, é necessário utilizar o seguinte comando dentro do HTML:
 <script> src = 'nome do arquivo.js'</script>
-*O script vem antes ou depois do body? Depende! Para carregar todo o HTML para dentro do js, tem que colocar o script no final, mas é possível utilizar no início desde que faça o seguinte acrescende dfer dentro do script.
-<script> dfer src = 'nome do arquivo.js'</script>
+*O script vem antes ou depois do body? Depende! Para carregar todo o HTML para dentro do js, tem que colocar o script no final, mas é possível utilizar no início desde que faça o seguinte acrescende defer dentro do script.
+<script> defer src = 'nome do arquivo.js'</script>
 -> Esse comando diz que só vai carregar o arquivo já se tiver todo o html.
 
 *O document traz todo o arquivo html. Por isso que no ínicio do html, usamos doctype.
@@ -45,3 +45,10 @@ Math.random() é uma função, por isso precisa dos parênteses.
 ----------------------------------------------------
 Para arrendondar, Math.ceil para baixo, Math.floor para cima, Math.round
 ----------------------------------------------------
+Outra forma de converter os números além dos parseInt() e parseFloat(), coloca o + na frente. Ex:+test.innerText = 10;
+----------------------------------------------------
+Para deixar as letras maíusculas ou minúsculas, toUpperCase() ou toLowerCase();
+----------------------------------------------------
+Para aplicar o style do css, vc aplica um o estilo direto no JS. Vc customiza no CSS e chama a style apenas no JAVA. => .className ou .classeList
+----------------------------------------------------
+getElementsTagName e querySelectorAll, sempre usar o [], pois vai trazer todos. 
