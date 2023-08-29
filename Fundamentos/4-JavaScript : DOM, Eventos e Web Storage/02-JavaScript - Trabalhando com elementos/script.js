@@ -22,8 +22,25 @@ header.appendChild(title);
 // 4) posição de onde será criado.appendChild(variável que gerará a mudança)
 
 const text = document.createElement('p') // Criei um parágrafo
-text.innerText = 'Números sorteados:';
+text.innerText = 'Números sorteados:'; 
 header.appendChild(text);
+
+//Para removeChild() -> utilizado para remover
 }
 
+const criarConteiner = () => {
+    //Criar onde será inserida no HTML, em qual posição será criada no HTML
+    const main = document.querySelector('main');
+    const containerNumeros = document.createElement('div');
+    //para adicionar uma classe do css ao atributo do HTML através do JS
+    //containerNumeros.className = 'numeros-container'; // Quando tiver várias className pode dar conflito, pois a className pode sobrescrever uma classe sobre a outra. Outra forma de add class é: classList.add('class1','class2'...)
+    containerNumeros.classList,add = ('numeros-container');
+    main.appendChild(containerNumeros);
+    
+}
+
+
+
 criarHeader();
+criarConteiner();
+
