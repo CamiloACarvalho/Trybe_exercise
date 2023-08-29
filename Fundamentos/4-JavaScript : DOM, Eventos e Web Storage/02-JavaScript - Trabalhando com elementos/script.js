@@ -39,8 +39,18 @@ const criarConteiner = () => {
     
 }
 
-
+const criarNumeros = () => {
+    const  container = document.querySelector('.numeros-container'); // O ponto antes, é para indicar que é uma class
+    // Como sabemos que será preciso repetir 6 vezes por causa dos números da mega sena, vamos criar um for para criar 6 elementos
+    for (let repeticao = 0; repeticao < 6; repeticao += 1) {
+        const numero = document.createElement('div');
+        numero.classList.add('numero');
+        // Para criar dentro do HTML, preciso dar um append. Quem é o elemento pai? container. Filho, numero
+        container.appendChild(numero);
+    }
+}
 
 criarHeader();
 criarConteiner();
+criarNumeros();
 
