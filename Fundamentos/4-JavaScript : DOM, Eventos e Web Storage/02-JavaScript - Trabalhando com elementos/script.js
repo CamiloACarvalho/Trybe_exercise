@@ -45,10 +45,16 @@ const criarNumeros = () => {
     for (let repeticao = 0; repeticao < 6; repeticao += 1) {
         const numero = document.createElement('div');
         numero.classList.add('numero');
+        // Criar os números aleatórios para o sorteio
+        numero.innerText = 1;
         // Para criar dentro do HTML, preciso dar um append. Quem é o elemento pai? container. Filho, numero
         container.appendChild(numero);
     }
 }
+
+// Dica para o projeto pixel art =>
+// Se precisar criar um elemento repetidamente, criar dentro do for
+// Igual a essa função criarNumeros
 
 criarHeader();
 criarConteiner();
