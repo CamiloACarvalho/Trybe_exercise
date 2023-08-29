@@ -2,8 +2,8 @@
 
 Para linkar o JavaScript com HTML, é necessário utilizar o seguinte comando dentro do HTML:
 <script> src = 'nome do arquivo.js'</script>
-*O script vem antes ou depois do body? Depende! Para carregar todo o HTML para dentro do js, tem que colocar o script no final, mas é possível utilizar no início desde que faça o seguinte acrescende dfender dentro do script.
-<script> dfender src = 'nome do arquivo.js'</script>
+*O script vem antes ou depois do body? Depende! Para carregar todo o HTML para dentro do js, tem que colocar o script no final, mas é possível utilizar no início desde que faça o seguinte acrescende dfer dentro do script.
+<script> dfer src = 'nome do arquivo.js'</script>
 -> Esse comando diz que só vai carregar o arquivo já se tiver todo o html.
 
 *O document traz todo o arquivo html. Por isso que no ínicio do html, usamos doctype.
@@ -35,4 +35,13 @@ Para linkar o JavaScript com HTML, é necessário utilizar o seguinte comando de
 Como setar um texto em um documento HTML? Simples, innerText. Sempre que quiser alterar algo nop HTML, selecionamos o elemento e utilizamos o innerText. Para alterar estilo, utilizamos o style.background. Nesse caso, vamos alterar a cor de fundo.
 ->cons test = document.querySelector('#name');
 test.innerText = 'Camilo';
+->Tem também o textContent
+->innerHTML vc acrescenta comandos htmls, por exemplo: document.querySelector('#name');
+test.innerHTML = <strong>Camilo</strong>;
 ---------------------------------------------------
+Quando precisar manipular o item, utilizar o [] para acessar os indeces dos arrays.
+---------------------------------------------------
+Math.random() é uma função, por isso precisa dos parênteses.
+----------------------------------------------------
+Para arrendondar, Math.ceil para baixo, Math.floor para cima, Math.round
+----------------------------------------------------
