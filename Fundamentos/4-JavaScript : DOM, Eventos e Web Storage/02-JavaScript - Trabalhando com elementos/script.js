@@ -39,6 +39,13 @@ const criarConteiner = () => {
     
 }
 
+const gerarNumeroAleatorio = () => {
+    return Math.ceil(Math.random() * (60 - 1) +1);
+    // Math.ceil vai arrendondar pra baixo
+    // * (max - min) -> o random gera de 0 a 1, por isso multiplica. max é 60 e min é 1
+    // Preciso entender o +1
+}
+
 const criarNumeros = () => {
     const  container = document.querySelector('.numeros-container'); // O ponto antes, é para indicar que é uma class
     // Como sabemos que será preciso repetir 6 vezes por causa dos números da mega sena, vamos criar um for para criar 6 elementos
@@ -46,15 +53,15 @@ const criarNumeros = () => {
         const numero = document.createElement('div');
         numero.classList.add('numero');
         // Criar os números aleatórios para o sorteio
-        numero.innerText = 1;
+        numero.innerText = gerarNumeroAleatorio(); // Chama a função de gerar númeror aleatório
         // Para criar dentro do HTML, preciso dar um append. Quem é o elemento pai? container. Filho, numero
         container.appendChild(numero);
     }
 }
 
 // Dica para o projeto pixel art =>
-// Se precisar criar um elemento repetidamente, criar dentro do for
-// Igual a essa função criarNumeros
+// Se precisar criar um elemento repetidamente, criar dentro do for, igual a essa função criarNumeros
+// Para criar o RGB aleatório, o rgb é composto por 3 cores, (num1, num2, num3)
 
 criarHeader();
 criarConteiner();
