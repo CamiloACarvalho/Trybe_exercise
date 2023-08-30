@@ -13,8 +13,18 @@ window.onload = () => {
             selected.classList.remove('.selected');
         }
         event.target.classListladd('.selected');
-
     }); 
     //monitora o evento, adiciona um escutador de evento..vai ficar monitorando, caso ocorra algo, ele avisa
     //ele é um parâmetro, e o evento tem que ser passado por aspas. o primeiro é um evento, o segundo é a função que ele vai executar.
+
+    const personagens = document.querySelectorAll('playersImages');
+    for (let personagem of personagens) { //for of. Personagem, vc vai ler de personsagens.
+        personagem.addEventListener('click', (event) => {
+            const selected = document.querySelector('.selected');
+            if (selected){
+                selected.style.backgroundImage = `url(${event.target.src})`;
+            }    
+        });
+    }
+
 }
