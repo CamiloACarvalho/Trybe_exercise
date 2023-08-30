@@ -59,34 +59,8 @@ const criarNumeros = (quantidade) => {
     }
 }
 
-// Dica para o projeto pixel art =>
-// Se precisar criar um elemento repetidamente, criar dentro do for, igual a essa função criarNumeros
-// Para criar o RGB aleatório, o rgb é composto por 3 cores, (num1, num2, num3)
-// Se precisar deixar dinâmico, precisa criar parâmetro
-// Propriedade em JS é diferente do CSS, não tem - 
-// Utilizar o DOM para o projeto Pixel Art. Até por motivos de acessar stiles.
-// Criar funções dentro deste projeto para organizar o código
-// Ver o erro através do navegador. Botão direito, inspencionar (aprender melhor isso)
-// É possível debugar pelo navegador que abriu o código HTML, CSS e JS
-
-
 criarHeader();
 criarConteiner();
 criarNumeros(6);
 
-// Diferença de elemento para nó:
-// Elemento = Apenas funções do HTML
-// Nó = todas as coisas que tem dentro do html, comentário, espaço em branco, qlq coisa
-// Dentro do HTML temos o elements e os Nods
-// Para aplicar essas funções, preciso pegar um elemento
-// firstChild é para retornar todos os elementos do html
-// firstElementChild todos os elementos dentro do HTML. espaços, comentários...
-// só elementos children
-// tudo childNodes
-// Sibling serve para dizer proximo irmão
-// lastChild é o último elemento
-// proximo - nextsibling (proximo irmão)
-// anterior - previousSibling (irmão anterior)
-// parentNode é uma propriedade é para saber quem é o pai. É o teste de DNA. Considera apenas NODE. NODE NÃO É ELEMENTO
-// parentElement é para saber quem é o pai do elemento. Todo elemento é um node, mas node NÃO É ELEMENTO. Node é tudo. Elemento são apenas o scoop do HTML
-// 
+
