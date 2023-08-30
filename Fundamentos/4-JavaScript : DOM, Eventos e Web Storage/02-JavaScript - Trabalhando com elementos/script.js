@@ -69,3 +69,19 @@ criarHeader();
 criarConteiner();
 criarNumeros(6);
 
+// Diferença de elemento para nó:
+// Elemento = Apenas funções do HTML
+// Nó = todas as coisas que tem dentro do html, comentário, espaço em branco, qlq coisa
+// Dentro do HTML temos o elements e os Nods
+// Para aplicar essas funções, preciso pegar um elemento
+// firstChild é para retornar todos os elementos do html
+// firstElementChild todos os elementos dentro do HTML. espaços, comentários...
+// só elementos children
+// tudo childNodes
+// Sibling serve para dizer proximo irmão
+// lastChild é o último elemento
+// proximo - nextsibling (proximo irmão)
+// anterior - previousSibling (irmão anterior)
+// parentNode é uma propriedade é para saber quem é o pai. É o teste de DNA. Considera apenas NODE. NODE NÃO É ELEMENTO
+// parentElement é para saber quem é o pai do elemento. Todo elemento é um node, mas node NÃO É ELEMENTO. Node é tudo. Elemento são apenas o scoop do HTML
+

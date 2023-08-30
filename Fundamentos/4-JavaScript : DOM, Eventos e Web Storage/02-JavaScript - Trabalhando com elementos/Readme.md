@@ -1,2 +1,1 @@
--> Para linkar o JS com o HTML
-<script defer src = "script.js"></script>
+Neste arquivo da aula, está faltando um arquivo CSS. 
