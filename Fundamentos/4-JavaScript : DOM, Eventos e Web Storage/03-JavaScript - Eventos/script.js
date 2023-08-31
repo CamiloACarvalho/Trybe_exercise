@@ -23,6 +23,7 @@ window.onload = () => {
             const selected = document.querySelector('.selected');
             if (selected){
                 selected.style.backgroundImage = `url(${event.target.src})`;
+                selected.classList.remove('.selected');
             }    
         });
     }
