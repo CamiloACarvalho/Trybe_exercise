@@ -13,7 +13,7 @@ const resetGame = () => {
     player2.style.backgroundImage = `url(/files/selectPlayer.png)`;
 };
 
-const scoreUp1 = () => {
+const scoreUp1 = () => { //somador de pontos
     const scoreUp1 = document.getElementById('p1Score'); //estamos pegando o elemento onde está armazenado o valor 0 no html
     scoreUp1.innerText = parseInt(scoreUp1.innerText) + 1;
 };
@@ -22,6 +22,19 @@ const scoreUp2 = () => {
     const scoreUp2 = document.querySelector('p2Score'); //estamos pegando o elemento onde está armazenado o valor 0 no html
     scoreUp2.innerText = +scoreUp1.innerText + 1; //Além do parseInt, temos o sinal de + que faz a mesma coisa do que a parseInt
 };
+
+const saveScoreLocalStorage = () => {
+    const scoreUp1 = document.getElementById('p1Score');
+    const scoreUp2 = document.querySelector('p2Score'); 
+    //vamos criar uma variável para armazenar as informações. É um local do browser que fica armazenada nessa propriedade
+    //essa propriedade é do java, é só acessar
+    //no localStorage temos duas opções, pega ou guardar a informação dentro do store. setItem imputa o item, getItem pega o item
+    //dentro do parâmentro temos dois parâmentro, chave e valor. ambas são strings
+    //chave: qual o nome que será dado para localstorage
+    //valor: o que deseja armazenar. 
+    localStorage.setItem('scoreP1',scoreUp1.innerText);
+    localStorage.setItem('scoreP2',scoreUp2.innerText);
+}
 
 window.onload = () => {
     //Captura os elementos que vamos usar
@@ -46,15 +59,16 @@ window.onload = () => {
             audioWinner.play();
             audioWinner.volume = 0.2;
             scoreUp1();
+            saveScoreLocalStorage();
             resetGame();
         }else if (player2Win){
             alert ('PLAYER 2 VENCEU'); 
             audioWinner.play();
             audioWinner.volume = 0.2;
             scoreUp2();
+            saveScoreLocalStorage();
             resetGame();
         }
-
     });
 
     resetbtn.addEventListener('click', resetGame);
