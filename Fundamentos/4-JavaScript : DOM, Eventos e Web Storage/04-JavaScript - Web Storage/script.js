@@ -36,6 +36,28 @@ const saveScoreLocalStorage = () => {
     localStorage.setItem('scoreP2',scoreUp2.innerText);
 }
 
+//criar uma forma de recuperar a informação dos pontos armazenados no localStorage
+const loadScoreLocalStorage = () => {
+    const scoreUp1 = document.getElementById('p1Score');
+    const scoreUp2 = document.querySelector('p2Score'); 
+    // if(localStorage.getItem('scoreP1')){
+    //     scoreUp1.innerText = localStorage.getItem('scoreP1');
+    // }
+    // if(localStorage.getItem('scoreP2')){
+    //     scoreUp1.innerText = localStorage.getItem('scoreP1');
+    // }
+
+    //quando tiver que armazenar várias informações dentro de um array, coloque dentro de um for. Neste caso será apenas duas informações
+    const arrayScores = [];
+    arrayScores.push(scoreUp1.innerText); //precisa ser armazenado como texto
+    arrayScores.push(scoreUp2.innerText);
+
+    localStorage.setItem('score', JSON.stringify(arrayScores)) //para armazenar um array dentro de um localStore, você tem que converter o item para string, pois o localStorage só armazena strings
+    //para armazenar isso em forma de strings, usa-se JSON.stringify
+};
+
+//Para armazenar várias informações em um único local, armazena em um array. Pensando no projeto Art Pixel, que são 25 blocos, parar armazena-los, armazene-os dentro de um array
+
 window.onload = () => {
     //Captura os elementos que vamos usar
     const startBtn = document.getElementById('start-race-btn'); //captura o botão de start
@@ -46,6 +68,8 @@ window.onload = () => {
 
     player1.style.marginLeft = 0;
     player2.style.marginLeft = 0;
+
+    loadScoreLocalStorage(); //é aqui que chamamos a propriedade que buscou as informações armazenadas na localStorage
 
     startBtn.addEventListener('click', () => {
         player1.style.marginLeft = (parseInt(player1.style.marginLeft) + gerarNumeroAleatorio()) + 'px';
