@@ -54,13 +54,19 @@ const loadScoreLocalStorage = () => {
     // if(localStorage.getItem('scoreP2')){
     //     scoreUp1.innerText = localStorage.getItem('scoreP1');
     // }
-    const score = JSON.parse(localStorage.getItem('score'));
+    if(localStorage.getItem('score')){
+        const score = JSON.parse(localStorage.getItem('score'));
     scoreUp1.innerText = score[0];
     scoreUp2.innerText = score[1];
-
+    }
 };
 
 //Para armazenar várias informações em um único local, armazena em um array. Pensando no projeto Art Pixel, que são 25 blocos, parar armazena-los, armazene-os dentro de um array
+
+const resetLocalStorage = () => {
+    localStorage.clear();
+    window.location.reload();
+}
 
 window.onload = () => {
     //Captura os elementos que vamos usar
