@@ -24,16 +24,24 @@ const scoreUp2 = () => {
 };
 
 const saveScoreLocalStorage = () => {
-    const scoreUp1 = document.getElementById('p1Score');
-    const scoreUp2 = document.querySelector('p2Score'); 
-    //vamos criar uma variável para armazenar as informações. É um local do browser que fica armazenada nessa propriedade
-    //essa propriedade é do java, é só acessar
-    //no localStorage temos duas opções, pega ou guardar a informação dentro do store. setItem imputa o item, getItem pega o item
-    //dentro do parâmentro temos dois parâmentro, chave e valor. ambas são strings
-    //chave: qual o nome que será dado para localstorage
-    //valor: o que deseja armazenar. 
-    localStorage.setItem('scoreP1',scoreUp1.innerText);
-    localStorage.setItem('scoreP2',scoreUp2.innerText);
+    // const scoreUp1 = document.getElementById('p1Score');
+    // const scoreUp2 = document.querySelector('p2Score'); 
+    // //vamos criar uma variável para armazenar as informações. É um local do browser que fica armazenada nessa propriedade
+    // //essa propriedade é do java, é só acessar
+    // //no localStorage temos duas opções, pega ou guardar a informação dentro do store. setItem imputa o item, getItem pega o item
+    // //dentro do parâmentro temos dois parâmentro, chave e valor. ambas são strings
+    // //chave: qual o nome que será dado para localstorage
+    // //valor: o que deseja armazenar. 
+    // localStorage.setItem('scoreP1',scoreUp1.innerText);
+    // localStorage.setItem('scoreP2',scoreUp2.innerText);
+    //quando tiver que armazenar várias informações dentro de um array, coloque dentro de um for. Neste caso será apenas duas informações
+    const arrayScores = [];
+    arrayScores.push(scoreUp1.innerText); //precisa ser armazenado como texto
+    arrayScores.push(scoreUp2.innerText);
+    
+    localStorage.setItem('score', JSON.stringify(arrayScores)) //para armazenar um array dentro de um localStore, você tem que converter o item para string, pois o localStorage só armazena strings
+    //para armazenar isso em forma de strings, usa-se JSON.stringify
+    //guardou na chave score, recupera na chave score
 }
 
 //criar uma forma de recuperar a informação dos pontos armazenados no localStorage
@@ -46,14 +54,10 @@ const loadScoreLocalStorage = () => {
     // if(localStorage.getItem('scoreP2')){
     //     scoreUp1.innerText = localStorage.getItem('scoreP1');
     // }
+    const score = JSON.parse(localStorage.getItem('score'));
+    scoreUp1.innerText = score[0];
+    scoreUp2.innerText = score[1];
 
-    //quando tiver que armazenar várias informações dentro de um array, coloque dentro de um for. Neste caso será apenas duas informações
-    const arrayScores = [];
-    arrayScores.push(scoreUp1.innerText); //precisa ser armazenado como texto
-    arrayScores.push(scoreUp2.innerText);
-
-    localStorage.setItem('score', JSON.stringify(arrayScores)) //para armazenar um array dentro de um localStore, você tem que converter o item para string, pois o localStorage só armazena strings
-    //para armazenar isso em forma de strings, usa-se JSON.stringify
 };
 
 //Para armazenar várias informações em um único local, armazena em um array. Pensando no projeto Art Pixel, que são 25 blocos, parar armazena-los, armazene-os dentro de um array
