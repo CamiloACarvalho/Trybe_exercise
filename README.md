@@ -2,7 +2,7 @@
 
 # Meu Incrível Jornal do Desenvolvimento - 🚀
 
-Bem-vindo ao meu repositório cheio de aventuras emocionantes no mundo da programação! 😎
+Bem-vindo ao meu repositório! 😎
 
 ## Sobre 📜
 
