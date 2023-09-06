@@ -51,8 +51,23 @@
             <label for="feijao-cima">Feijão por cima do arroz</label>
             <input type="radio" name="feijao-posicao" id="arroz-baixo" value="arroz-baixo"> <!--Na verdade o id === ao for é uma forma de quando vc clicar no label, marcar o imput-->
             <label for="arroz-baixo">Arroz por baixo do feijão</label>
+
+            <h4>Marcarrão:</h4>
+            <input type="checkbox" name="molho-funghi" id="funghi"> <!--radio vc seleciona só um, checkbox vc pode marcar varios e tem a opção de marcar e desmarcar. Radio vc não pode desmarcar. Radio maior que 7 é interessante virar um select-->
+            <label for="funghi">Funghi</label>
+            <input type="checkbox" name="molho-tomate" id="tomate"> <!---->
+            <label for="tomate">Tomate</label>
+            <input type="checkbox" name="molho-branco" id="branco"> <!---->
+            <label for="branco">Branco</label>
+            <input type="checkbox" name="molho-sugo" id="sug"> <!---->
+            <label for="sugo">Sugo</label>
             
+            <h4>Informações Extras:</h4>
+            <textarea name="" id="" placeholder="Digite suas informações aqui"cols="30" rows="10"></textarea>
+            <!--vc vai no css, chama o imput (textarea), resize: none; | vc pode definir o tamanho por row e cols ou ir no css e lançar o width e heigth. Para placeholde aparece na tela, </textarea?> não pode ter espaço, porque ele considera os espaços como parte do texto. todos os espaçoes dentro do <textarea></textarea> é considerado como texto-->
+
             <br>
+            <!--Não utiliza input type button. Isso é boa prática-->
             <button type='submit'>Enviar</button>
     </main>
 
