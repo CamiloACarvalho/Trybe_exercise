@@ -42,6 +42,15 @@
             </select>
 
             <h4>Ovo Frito?</h4>
+            <label for="ovo">Quantidade (R$ 2,00)</label>
+            <input type="number" name="Qtd-ovo" id="ovo">
+
+            <h4>Onde vai o feijão?</h4>
+            <!--Quando for selecionar apenas um radio, o segredo está no name. Os names tem que ser apenas 1. Se eles forem diferentes, vc pode marcar os radios que tem o name diferente-->
+            <input type="radio" name="feijao-posicao" id="feijao-cima" value="feijao-cima"> <!--O value é o valo que será enviado para o back_end. O esquema de name igual, só é válido para o radio-->
+            <label for="feijao-cima">Feijão por cima do arroz</label>
+            <input type="radio" name="feijao-posicao" id="arroz-baixo" value="arroz-baixo"> <!--Na verdade o id === ao for é uma forma de quando vc clicar no label, marcar o imput-->
+            <label for="arroz-baixo">Arroz por baixo do feijão</label>
             
             <br>
             <button type='submit'>Enviar</button>
