@@ -26,3 +26,8 @@ Vamos aprofundar nossos conhecimentos em JavaScript explorando o DOM (Modelo de 
 
 Aprendizado é como um quebra-cabeça, e agora estamos encaixando as peças de forms em HTML e estilos flexíveis com CSS usando a flexbox. E para garantir que estão funcionando, vamos aprender sobre testes unitários para ter certeza de que cada parte do nosso código é tão bom quanto imaginamos. 🧩🎩
 
+---
+
+<div align = "center">
+  
+![ThumbsUpالإبهامGIF](https://media1.giphy.com/media/11JTxkrmq4bGE0/giphy.gif?cid=ecf05e47fuuev648xikivvffczllafghbdwu79vwitug3yhw&ep=v1_gifs_search&rid=giphy.gif&ct=g)
