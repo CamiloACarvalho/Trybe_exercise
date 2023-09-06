@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+    <script defer src="./script.js"></script>
+
+    <title>Restaurante ouTRYBEck</title>
+</head>
+
+<body>
+    <header>
+        <h1>Ordem de Pedido</h1>
+    </header>
+
+    <main>
+         <form method="get"> <!--Altera a URL com as informações de imput. O post precisa de um back_End. Uma forma de capturar as informações. Tudo que tiver dentro, será 'capatado' -->
+            <div class="user">
+                <h4>Indentificação:</h4>
+                <label for="nome">Nome: </label> <!--O atributo for serve para indenficar as informações na URL. Name é a identificação quue vai na URL. Lembre-se que o mesmo nome do for tem que ser id> -->
+                <input required type="text" name="nome" id="nome" placeholder="Coloque seu nome aqui">
+
+                <br>
+                <label for="email">E-mail: </label>
+                <input type="email" name="email" id="email" placeholder="seue-mail@servidor.com.br">
+
+                <br>
+                <label for="endereco">Enderço: </label>
+                <input type="text" name="nome" id="endereco">
+            </div>
+
+            <h4>Tamanho da Marmita:</h4>
+            <select name="Tamanho" id="">
+                <option value="P">El MARMITITA- 500g</option> <!--O valor da value é o valor que vc vai buscar no back_end. É a indentificação. Options precisa de value. A identificação vai pra url-->
+                <option value="M">MARMITA - 800g</option>
+                <option value="G">El MARMITÃO - 1kg</option>
+                <option value="GG">ALÁ PEDREIRO - 1,5kg</option>
+            </select>
+
+            <h4>Ovo Frito?</h4>
+            <label for="ovo">Quantidade (R$ 2,00)</label>
+            <input type="number" name="Qtd-ovo" id="ovo">
+
+            <h4>Onde vai o feijão?</h4>
+            <!--Quando for selecionar apenas um radio, o segredo está no name. Os names tem que ser apenas 1. Se eles forem diferentes, vc pode marcar os radios que tem o name diferente-->
+            <input type="radio" name="feijao-posicao" id="feijao-cima" value="feijao-cima"> <!--O value é o valo que será enviado para o back_end. O esquema de name igual, só é válido para o radio-->
+            <label for="feijao-cima">Feijão por cima do arroz</label>
+            <input type="radio" name="feijao-posicao" id="arroz-baixo" value="arroz-baixo"> <!--Na verdade o id === ao for é uma forma de quando vc clicar no label, marcar o imput-->
+            <label for="arroz-baixo">Arroz por baixo do feijão</label>
+
+            <h4>Marcarrão:</h4>
+            <input type="checkbox" name="molho-funghi" id="funghi"> <!--radio vc seleciona só um, checkbox vc pode marcar varios e tem a opção de marcar e desmarcar. Radio vc não pode desmarcar. Radio maior que 7 é interessante virar um select-->
+            <label for="funghi">Funghi</label>
+            <input type="checkbox" name="molho-tomate" id="tomate"> <!---->
+            <label for="tomate">Tomate</label>
+            <input type="checkbox" name="molho-branco" id="branco"> <!---->
+            <label for="branco">Branco</label>
+            <input type="checkbox" name="molho-sugo" id="sugo"> <!---->
+            <label for="sugo">Sugo</label>
+            
+            <h4>Informações Extras:</h4>
+            <textarea name="" id="" placeholder="Digite suas informações aqui"cols="30" rows="10"></textarea>
+            <!--vc vai no css, chama o imput (textarea), resize: none; | vc pode definir o tamanho por row e cols ou ir no css e lançar o width e heigth. Para placeholde aparece na tela, </textarea?> não pode ter espaço, porque ele considera os espaços como parte do texto. todos os espaçoes dentro do <textarea></textarea> é considerado como texto-->
+
+            <br>
+            <!--Não utiliza input type button. Isso é boa prática-->
+            <button type='submit'>Enviar</button>
+            <!--PreventDefault é utilizado para cancelar a ação. Impede que o evento se propague. Ex: Concorda com os termos de uso? Se o usuário não marcar, ele não deixa enviar o formulário-->
+        </form>
+    </main>
+
+    <aside class="ticket">
+        <br><br><br>
+        == RESTAURANTE ouTRYBEck ==
+        <br>
+        ☠️ Quem não sobrevive não volta mais ☠️
+        <br><br>
+
+        Pedido nº <span>2323</span>
+
+        <div class="left">
+            <ol id="orderList"></ol>
+        </div>
+
+        <br><br><br>
+
+        Obrigado por nunca mais não voltar 💚
+        <br><br><br>
+
+    </aside>
+
+</body>
+
+</html>
