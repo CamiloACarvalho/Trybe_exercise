@@ -18,7 +18,7 @@
     </header>
 
     <main>
-         <form method="get"></form> <!--Altera a URL com as informações de imput. O post precisa de um back_End. Uma forma de capturar as informações. Tudo que tiver dentro, será 'capatado' -->
+         <form method="get"> <!--Altera a URL com as informações de imput. O post precisa de um back_End. Uma forma de capturar as informações. Tudo que tiver dentro, será 'capatado' -->
             <div class="user">
                 <h4>Indentificação:</h4>
                 <label for="nome">Nome: </label> <!--O atributo for serve para indenficar as informações na URL. Name é a identificação quue vai na URL. Lembre-se que o mesmo nome do for tem que ser id> -->
@@ -69,6 +69,8 @@
             <br>
             <!--Não utiliza input type button. Isso é boa prática-->
             <button type='submit'>Enviar</button>
+            <!--PreventDefault é utilizado para cancelar a ação. Impede que o evento se propague. Ex: Concorda com os termos de uso? Se o usuário não marcar, ele não deixa enviar o formulário-->
+        </form>
     </main>
 
     <aside class="ticket">
