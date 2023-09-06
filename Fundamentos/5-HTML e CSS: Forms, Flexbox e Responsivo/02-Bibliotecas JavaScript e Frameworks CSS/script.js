@@ -8,11 +8,17 @@ indow.onload = () => {
 
     // CRIA OPTIONS COM TODAS AS MARMITAS DISPONÍVEIS NO OBJETO FOODS
     const getItemsMarmita = (data) => {
-
+        const weightMarmita = document.getElementById('tamanhoMarmitas');
+        for (let element of data.items) {
+            const newOption = document.createElement('option');
+            newOption.innerText = element.name;
+            weightMarmita.appendChild(newOption); //é uma forma de deixar a página dinâmica. Vc faz um dropdown através do DOM. Vc busca no JSON e coloca ele no HTML
+        }
     };
 
     // CAPTURA OS VALORES DOS INPUTS E MOSTRA A NOTA FISCAL.
     form.addEventListener('submit', (event) => {
+        event.preventDefault();
         const allEaseinputs = document.querySelectorAll('.my-inputs');
         const options = ["Nome:", "E-mail:","Tam. Marmita:", "Qtd Ovos:", "Comentários:"];
         for (let index = 0; index < allEaseinputs.length; index += 1) {
