@@ -20,12 +20,12 @@ window.onload = () => {
     form.addEventListener('submit', (event) => {
         // const checkBox = document.getElementById('termos-uso');
         // if (!checkBox.checked) {
-            event.preventDefault();
+        event.preventDefault();
         // }
 
 
         const allEaseinputs = document.querySelectorAll('.my-inputs');
-        const options = ["Nome:", "E-mail:","Tam. Marmita:", "Qtd Ovos:", "Comentários:"];
+        const options = ["Nome:", "E-mail:", "Tam. Marmita:", "Qtd Ovos:", "Comentários:"];
         for (let index = 0; index < allEaseinputs.length; index += 1) {
             const element = allEaseinputs[index];
             if (options[index] === "Tam. Marmita:") {
@@ -67,11 +67,11 @@ const foods = {
     items: [
         {
             name: 'Marmitinha - 500g',
-            price: 19.90
+            price: 19.90,
         },
         {
             name: 'Marmita - 800g',
-            price: 23.90
+            price: 23.90,
         },
         {
             name: 'Marmitão - 1Kg',
