@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous"> <!--CSS do bootstrap-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"> <!--bootstrap para icones-->
 
     <link rel="stylesheet" href="style.css">
     <script defer src="./script.js"></script>
@@ -45,11 +46,7 @@
             <div class="container mb-4">
                 <h4 class="display-6">Tamanho da Marmita:</h4>
 
-                <select name="Tamanho" id="">
-                    <option value="P">El MARMITITA- 500g</option> <!--O valor da value é o valor que vc vai buscar no back_end. É a indentificação. Options precisa de value. A identificação vai pra url-->
-                    <option value="M">MARMITA - 800g</option>
-                    <option value="G">El MARMITÃO - 1kg</option>
-                    <option value="GG">ALÁ PEDREIRO - 1,5kg</option>
+                <select class="form-select my-input" name="tamanho" id="tamanho">
                 </select>
 
             </div>
@@ -70,6 +67,9 @@
                 <!--Quando for selecionar apenas um radio, o segredo está no name. Os names tem que ser apenas 1. Se eles forem diferentes, vc pode marcar os radios que tem o name diferente-->
                 <input type="radio" name="feijao-posicao" id="feijao-cima" value="feijao-cima"> <!--O value é o valo que será enviado para o back_end. O esquema de name igual, só é válido para o radio-->
                 <label for="feijao-cima">Feijão por cima do arroz</label>
+            </div>
+
+            <div class="container mb-4">
                 <input type="radio" name="feijao-posicao" id="arroz-baixo" value="arroz-baixo"> <!--Na verdade o id === ao for é uma forma de quando vc clicar no label, marcar o imput-->
                 <label for="arroz-baixo">Arroz por baixo do feijão</label>
             
@@ -90,20 +90,20 @@
             
             </div>
 
-            <div class="container mb-4"></div>
-            
+            <div class="container">
                 <h4 class="display-6">Informações Extras:</h4>
-                <textarea name="" id="" placeholder="Digite suas informações aqui"cols="30" rows="10"></textarea>
-                <!--vc vai no css, chama o imput (textarea), resize: none; | vc pode definir o tamanho por row e cols ou ir no css e lançar o width e heigth. Para placeholde aparece na tela, </textarea?> não pode ter espaço, porque ele considera os espaços como parte do texto. todos os espaçoes dentro do <textarea></textarea> é considerado como texto-->
-            
+                <div class="form-floating mb-4">            
+                    <textarea class="form-control my-inputs" name="" id="" placeholder="Digite suas informações aqui"cols="30" rows="10"></textarea>
+                    <!--vc vai no css, chama o imput (textarea), resize: none; | vc pode definir o tamanho por row e cols ou ir no css e lançar o width e heigth. Para placeholde aparece na tela, </textarea?> não pode ter espaço, porque ele considera os espaços como parte do texto. todos os espaçoes dentro do <textarea></textarea> é considerado como texto-->
+                </div>
             </div>
 
-            <div class="container mb-4">
-
+            <div class="text-center">
                 <!--Não utiliza input type button. Isso é boa prática-->
-                <button type='submit'>Enviar</button>
+                <button class="btn btn-light" type='submit'>Enviar</button>
                 <!--PreventDefault é utilizado para cancelar a ação. Impede que o evento se propague. Ex: Concorda com os termos de uso? Se o usuário não marcar, ele não deixa enviar o formulário-->
-           
+                <button disabled class="btn btn-danger" type="reset">Limpar</button>
+                <!--o type reset, já limpa o formulário. Muito usado em formulários-->
             </div>
 
         </form>
