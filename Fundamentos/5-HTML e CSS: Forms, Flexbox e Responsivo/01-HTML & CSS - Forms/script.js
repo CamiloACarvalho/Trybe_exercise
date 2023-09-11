@@ -1,4 +1,4 @@
-indow.onload = () => {
+window.onload = () => {
     // CAPTURA DOS ELEMENTOS
     const form = document.getElementById('form');
     const weightMarmita = document.getElementById('tamanhoMarmitas');
