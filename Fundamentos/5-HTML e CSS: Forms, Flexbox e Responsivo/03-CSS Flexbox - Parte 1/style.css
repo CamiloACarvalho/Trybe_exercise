@@ -1,0 +1,37 @@
+.menu-container{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #1fb721;
+    color: white;
+  }
+  .menu{
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+  }
+  
+  ul {
+    list-style-type: none;
+  }
+  
+  header {
+     display: flex;
+     align-items: center;
+     justify-content: space-evenly;
+  }
+  header img {
+    width: 200px;
+  }
+  .header-select{
+    width: 200px;
+  }
+  .photo-grid{
+    display: flex;
+    border: 2px solid red;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  
+  .photo-grid  img{
+    width: 200px;
+  }
