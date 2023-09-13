@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+  }
+  
+  .container {
+    width: 100%;
+    border: 3px solid black;
+    height: 500px;
+    margin: 0 auto;
+  
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    /* flex-wrap: wrap; */
+    /* align-content: space-around; */
+    /* Só surte efeito, quando tivermos mais de uma linha */
+  }
+  
+  .item {
+    background-color: tomato;
+    margin: 5px;
+    flex-basis: 300px;
+    order: 2;
+  }
+  
+  .container div:nth-child(3) {
+    /* align-self: center; */
+    /* flex-grow: 1; 
+    flex-shrink: 3;
+    flex-basis: 300px; */
+    flex: 1 3 300px;
+  
+    /* order: 1; */
+  }
