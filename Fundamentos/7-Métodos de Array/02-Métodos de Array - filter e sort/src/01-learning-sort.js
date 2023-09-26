@@ -3,10 +3,11 @@
     Sobrescreve o array original colocando-o em ordem alfabetica
 */
 
-const duvida = ['🫘', '🌱'];
-duvida.sort();
-console.log(duvida);
+const quemVemPrimeiro = ['🥚', '🐓'];
+console.log(quemVemPrimeiro);
+quemVemPrimeiro.sort();
+console.log(quemVemPrimeiro);
 
-const arrayNome = ['Marcio', 'Carol', 'Barbara', 'Gabi'];
-arrayNome.sort();
-console.log(arrayNome);
+const arrayNomes = ['Rafael', 'Joi', 'Duilio', 'Enza'];
+arrayNomes.sort();
+console.log(arrayNomes);
