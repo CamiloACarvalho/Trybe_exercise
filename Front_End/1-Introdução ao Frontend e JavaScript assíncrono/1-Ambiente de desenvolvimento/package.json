@@ -4,13 +4,17 @@
   "description": "",
   "main": "main.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-    "dev": "vite --open"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "vite --open",
+    "lint": "eslint ./src"
   },
   "keywords": [],
   "author": "Camilo Carvalho",
   "license": "ISC",
   "dependencies": {
     "vite": "^4.4.11"
+  },
+  "devDependencies": {
+    "eslint": "^8.51.0"
   }
 }
