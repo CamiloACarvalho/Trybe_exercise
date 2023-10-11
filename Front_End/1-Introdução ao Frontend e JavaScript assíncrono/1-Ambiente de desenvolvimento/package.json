@@ -12,9 +12,11 @@
   "author": "Camilo Carvalho",
   "license": "ISC",
   "dependencies": {
+    "nanoid": "^5.0.1",
     "vite": "^4.4.11"
   },
   "devDependencies": {
     "eslint": "^8.51.0"
-  }
+  },
+  "type": "module"
 }
