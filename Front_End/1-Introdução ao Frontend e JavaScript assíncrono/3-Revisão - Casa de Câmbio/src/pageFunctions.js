@@ -6,9 +6,9 @@ const creatLiElement = (currency) => {
   const valueElement = document.createElement('span');
 
   const ms = 1000;
-  const date = new Date(currency.timestamp * ms); //convertendo o tempo para ms. Porque a função new Date só lê ms e conta de 01/01/1970 
+  const date = new Date(currency.timestamp * ms); // Convertendo o tempo para ms. Porque a função new Date só lê ms e conta de 01/01/1970
 
-  dateElement.textContent = date.toLocaleDateString('pt-BR'); //toLocaleDateString serve para traduzir, converter para datas locais
+  dateElement.textContent = date.toLocaleDateString('pt-BR'); // ToLocaleDateString serve para traduzir, converter para datas locais
   valueElement.textContent = currency.ask;
   liElement.appendChild(dateElement);
   liElement.appendChild(valueElement);
@@ -24,7 +24,7 @@ export const renderCurrenciesList = (
   const { code, codeIn } = currenciesList[0];
   titleElement.textContent = `Cotações de ${code}/${codeIn} dos últimos 30 dias`;
 
-  const listElement = currenciesList.map((currency) => creatLiElement)
+  const listElement = currenciesList.map((currency) => creatLiElement(currency));
 
   listElement.append(...liElement);
 };

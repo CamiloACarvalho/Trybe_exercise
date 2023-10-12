@@ -1,6 +1,29 @@
 {
-  "dependencies": {
+  "name": "casa-de-cambio",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "files": [
+    "dist",
+    "index.d.ts"
+  ],
+  "main": "./dist/counter.umd.cjs",
+  "module": "./dist/counter.js",
+  "types": "./index.d.ts",
+  "exports": {
+    "types": "./index.d.ts",
+    "import": "./dist/counter.js",
+    "require": "./dist/counter.umd.cjs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "vite --open", 
+    "lint": "eslint ./src",
+    "build": "vite build"
+  },
+  "devDependencies": {
     "@trybe/eslint-config-frontend": "^1.11.4",
-    "sweetalert2": "^11.7.32"
+    "sweetalert2": "^11.7.32",
+    "vite": "^4.3.9"
   }
 }
