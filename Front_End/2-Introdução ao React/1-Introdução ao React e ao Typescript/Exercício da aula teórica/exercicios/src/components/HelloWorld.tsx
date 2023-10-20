@@ -1,9 +1,7 @@
-import ModuleDetails from "./ModuleDetails";
+import ModuleDetails from './ModuleDetails';
 
-function HelloWorld () {
-
-  return < ModuleDetails />;
-
+function HelloWorld() {
+  return <ModuleDetails />;
 }
 
 export default HelloWorld;
