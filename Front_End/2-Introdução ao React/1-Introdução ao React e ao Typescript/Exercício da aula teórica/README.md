@@ -19,7 +19,7 @@
 
 **Passo 3:** Configuração do ESLint
 - ✔️ **3. Crie o arquivo .eslintrc.json e faça o extends para @trybe/eslint-config-frontend/typescript**.
-  - 3.1 Como o VITE já vem com o ESLint, precisamos remover, para remover, `rm.eslintrc.cjs`
+  - 3.1 Como o VITE já vem com o ESLint, precisamos remover, para remover, `rm .eslintrc.cjs`
   - 3.2 Remova as dependências que foram instaladas pelo VITE - `npm remove @typescript-eslint/eslint-plugin @typescript-eslint/parser eslint-plugin-react-hooks eslint-plugin-react-refresh`
   - 3.3 Instale o pacote de regras de lint (existe várias regras, inclusive é possível criar as próprias regas, mas por hora, vamos usar as regras da Trybe) - `npm install @trybe/eslint-config-frontend -D`
   - 3.4 Criar o arquivo .eslintrc.json na raiz do projeto - `touch .eslintrc.json`
