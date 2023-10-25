@@ -1,0 +1,32 @@
+/* Card.css */
+.card__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 10px;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+  width: 200px;
+  transition: all 0.3s ease;
+}
+
+.card__item:hover {
+  box-shadow: 0px 0px 15px rgba(0,0,0,0.2);
+  transform: scale(1.05);
+}
+
+.card__item .weekday,
+.card__item .date,
+.card__item .temperature,
+.card__item .weather {
+  margin: 10px 0;
+  font-size: 1.2rem;
+}
+
+.card__item img {
+  max-width: 60px;
+  height: auto;
+}
