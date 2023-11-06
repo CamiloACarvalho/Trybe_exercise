@@ -1,4 +1,4 @@
-import { HiMagnifyingGlass } from 'react-icons/hi2';
+import { HiMagnifyingGlass } from 'react-icons/hi2'; // tive que instalar npm install react-icons
 import './SearchBar.css';
 import { useState } from 'react';
 

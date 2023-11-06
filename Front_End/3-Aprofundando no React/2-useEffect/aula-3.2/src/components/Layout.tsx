@@ -1,4 +1,4 @@
-import { FaGithub } from 'react-icons/fa';
+import { FaGithub } from 'react-icons/fa'; // tive que instalar npm install react-icons
 import './Layout.css';
 import { Outlet } from 'react-router-dom';
 
