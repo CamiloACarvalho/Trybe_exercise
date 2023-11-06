@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Hammersmith+One&family=Jost:ital,wght@0,400;0,700;1,300&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --title: 'Hammersmith One', sans-serif;
+  --text: 'Jost', sans-serif;
+  --primary: #e1f2d5;
+  --accent: #23d100;
+  --secondary: #00362c;
+  /* Background and Foreground */
+  --bg: #282a36;
+  --fg: #f8f8f2;
+
+  /* Syntax Colors */
+  --blue: #6272a4;
+  --cyan: #8be9fd;
+  --green: #50fa7b;
+  --orange: #ffb86c;
+  --pink: #ff79c6;
+  --purple: #bd93f9;
+  --red: #ff5555;
+  --yellow: #f1fa8c;
+  --gray: #44475a;
+}
+
+h1 {
+  font-family: var(--title);
+}
+
+a {
+  text-decoration: none;
+  color: var(--primary);
+}
+
+#root {
+  width: 100%;
+  position: relative;
+  min-height: 100vh;
+}
+
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+a {
+  color: var(--bg) !important;
+  background-color: #23d100;
+  padding: 1rem;
+  display: inline-block;
+  margin: 1em 1em 1em 0;
+  font-family: sans-serif;
+}
+
+.user-profile{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+img{
+  width: 100px;
+  border-radius: 50%;
+}
+
+h2 {
+  font-family: sans-serif;
+  font-size: 1.5rem;
+  margin: 1rem 0;
+}
+
+p {
+  font-family: monospace;
+}
+
+
+li {
+  margin-left: 1em;
+  padding-left: 0.5em;
+}
+
+li::marker {
+  content: "💻";
+}
