@@ -1,6 +1,3 @@
-Certamente! Aqui está o texto transcrito para Markdown:
-
-```markdown
 # ⚙️ Configuração do Projeto React ⚛️ com TS, Lint, Vite, RTL, e Jest 
 
 ## Passo 1: ⚙️ Configuração Inicial 💻
@@ -131,4 +128,3 @@ Certamente! Aqui está o texto transcrito para Markdown:
      }
      ```
    ✔️ **4.5** Remova  a chave `type` do `package.json` .
-```
