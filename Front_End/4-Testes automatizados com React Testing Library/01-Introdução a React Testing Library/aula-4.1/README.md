@@ -3,12 +3,16 @@
 ## Passo 1: ⚙️ Configuração Inicial 💻
 
 1. **Crie um projeto React⚛️ com TS usando Vite**
-   ✔️ **1.1** Execute o comando: `npm create vite@latest`
-     ✔️ **1.1.1** Project name:  'nome do projeto'
-     ✔️ **1.1.2** Select a framework:  'React'
-     ✔️ **1.1.3** Select a variant:  'TypeScript ou TypeScript + SWC'
-   ✔️**1.2** Execute o comando: `npm install` (instala as dependências do node)
-   ✔️**1.3** Instale as bibliotecas necessárias:
+   
+   ✔️ **1.1** Execute o comando:
+      ```bash
+         npm create vite@latest
+      ```
+   ✔️ **1.2** Execute o comando
+      ```bash
+         npm install
+      ```
+   ✔️ **1.3** Instale as bibliotecas necessárias:
      ```bash
      npm i -D vitest jsdom @testing-library/jest-dom @testing-library/react @testing-library/user-event @types/jest
      npm i -D @testing-library/user-event
