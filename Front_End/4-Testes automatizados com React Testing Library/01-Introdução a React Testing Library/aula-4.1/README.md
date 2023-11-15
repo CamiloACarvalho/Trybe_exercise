@@ -1,55 +1,56 @@
-
 # ⚙️ Configuração do Projeto React ⚛️ com TS, Lint, Vite, RTL, e Jest 
 
 ## Passo 1: ⚙️ Configuração Inicial 💻
 
 1. **Crie um projeto React⚛️ com TS usando Vite**
-  ✔️ 1.1 Execute o comando: `npm create vite@latest`
-    ✔️ 1.1.1 Project name:  'nome do projeto'
-    ✔️ 1.1.2 Select a framework:  'React'
-    ✔️ 1.1.3 Select a variant:  'TypeScript ou TypeScript + SWC'
-  ✔️ 1.2 Execute o comando: `npm install` (instala as dependências do node)
-  ✔️ 1.3 Instale as bibliotecas necessárias:
-    ```bash
-    npm i -D vitest jsdom @testing-library/jest-dom @testing-library/react @testing-library/user-event @types/jest
-    npm i -D @testing-library/user-event
-    ```
+   ✔️ **1.1** Execute o comando: `npm create vite@latest`
+     ✔️ **1.1.1** Project name:  'nome do projeto'
+     ✔️ **1.1.2** Select a framework:  'React'
+     ✔️ **1.1.3** Select a variant:  'TypeScript ou TypeScript + SWC'
+   ✔️**1.2** Execute o comando: `npm install` (instala as dependências do node)
+   ✔️**1.3** Instale as bibliotecas necessárias:
+     ```bash
+     npm i -D vitest jsdom @testing-library/jest-dom @testing-library/react @testing-library/user-event @types/jest
+     npm i -D @testing-library/user-event
+     ```
 
 ## Passo 2: ⚙️ Configuração do ESLint
 
 2. **Configurar o ESLint**
 
-  ✔️ 2.1 Remova as dependências instaladas pelo VITE:
-    ```bash
-    npm remove @typescript-eslint/eslint-plugin @typescript-eslint/parser eslint-plugin-react-hooks eslint-plugin-react-refresh
-    ```
-  ✔️ 2.2 Instale o pacote de regras de lint:
-    ```bash
-    npm install @trybe/eslint-config-frontend -D
-    ```
-  ✔️ 2.3 Crie o arquivo `.eslintrc.json` na raiz do projeto e adicione:
-    ```json
-    {
-      "extends": "@trybe/eslint-config-frontend/typescript"
-    }
-    ```
-  ✔️ 2.4 Configuração do VSCode:
-    ✔️ 2.4.1 Crie o arquivo `settings.json` em `.vscode` e configure:
-      ```json
-      {
-        "editor.formatOnSave": true,
-        "editor.codeActionsOnSave": {
-          "source.fixAll.eslint": true,
-        },
-        "extensions.ignoreRecommendations": false
-      }
-      ```
-  ✔️ 2.5 Adicione o script de lint no `package.json`:
-    ```json
-    "scripts": {
-      "lint": "eslint src --ext .ts,.tsx"
-    }
-    ```
+    ✔️**2.1** Remova as dependências instaladas pelo VITE:
+     ```bash
+     npm remove @typescript-eslint/eslint-plugin @typescript-eslint/parser eslint-plugin-react-hooks eslint-plugin-react-refresh
+     ```
+   ✔️**2.2** Instale o pacote de regras de lint:
+     ```bash
+     npm install @trybe/eslint-config-frontend -D
+     ```
+   ✔️**2.3** Crie o arquivo `.eslintrc.json` na raiz do projeto e adicione:
+     ```json
+     {
+       "extends": "@trybe/eslint-config-frontend/typescript"
+     }
+     ```
+   ✔️**2.4** Configuração do VSCode:
+     ✔️**2.4.1** Crie o arquivo `settings.json` em `.vscode` e configure:
+       ```json
+       {
+         "editor.formatOnSave": true,
+         "editor.codeActionsOnSave": {
+           "source.fixAll.eslint": true,
+         },
+         "extensions.ignoreRecommendations": false
+       }
+       ```
+
+   ✔️**2.5** Adicione o script de lint no `package.json`:
+     ```json
+     "scripts": {
+       "lint": "eslint src --ext .ts,.tsx"
+     }
+     ```
+
 ## Passo 3: ⚙️ Configuração do Vitest
 
 3. **Configurar o Vitest**
