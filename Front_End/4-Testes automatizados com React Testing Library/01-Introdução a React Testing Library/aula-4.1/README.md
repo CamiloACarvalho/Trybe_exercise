@@ -3,7 +3,6 @@
 ## Passo 1: ⚙️ Configuração Inicial 💻
 
 1. **Crie um projeto React⚛️ com TS usando Vite**
-
    ✔️ **1.1** Execute o comando: `npm create vite@latest`
      ✔️ **1.1.1** Project name:  'nome do projeto'
      ✔️ **1.1.2** Select a framework:  'React'
@@ -28,25 +27,29 @@
      npm install @trybe/eslint-config-frontend -D
      ```
    ✔️**2.3** Crie o arquivo `.eslintrc.json` na raiz do projeto e adicione:
-     ```json
+     ```bash
      {
        "extends": "@trybe/eslint-config-frontend/typescript"
      }
      ```
    ✔️**2.4** Configuração do VSCode:
-     ✔️**2.4.1** Crie o arquivo `settings.json` em `.vscode` e configure:
-       ```json
-       {
-         "editor.formatOnSave": true,
-         "editor.codeActionsOnSave": {
-           "source.fixAll.eslint": true,
-         },
-         "extensions.ignoreRecommendations": false
-       }
-       ```
-
+   
+     Crie um arquivo na pasta raiz:
+      ```bash
+         touch settings.json
+      ```
+      Configure esse arquivo:
+      ```bash
+      {
+        "editor.formatOnSave": true,
+        "editor.codeActionsOnSave": {
+          "source.fixAll.eslint": true,
+        },
+        "extensions.ignoreRecommendations": false
+      }
+      ```
    ✔️**2.5** Adicione o script de lint no `package.json`:
-     ```json
+     ```bash
      "scripts": {
        "lint": "eslint src --ext .ts,.tsx"
      }
@@ -57,7 +60,7 @@
 3. **Configurar o Vitest**
 
    ✔️**3.1** Atualize o arquivo `vite.config.ts`:
-     ```typescript
+     ```bash
      // vite.config.ts
      /// <reference types="vitest" />
 
@@ -80,7 +83,7 @@
      })
      ```
    ✔️**3.2** Adicione scripts ao `package.json`:
-     ```json
+     ```bash
      "scripts": {
        "test": "vitest",
        "coverage": "vitest run --coverage"
@@ -96,16 +99,9 @@
      npm i -D @testing-library/jest-dom @testing-library/react @testing-library/user-event identity-obj-proxy jest-environment-jsdom
      ```
    ✔️**4.2** Crie arquivos necessários:
-     ✔️**4.2.1** `.jest/setupTests.js`
-       ```javascript
-       import '@testing-library/jest-dom';
-       ```
-     ✔️**4.2.2** `.jest/mocks/mock.js`
-       ```javascript
-       module.exports = 'test-file-stub';
-       ```
-     ✔️**4.2.3** `jest.config.js`
-       ```javascript
+      
+     Dentro do arquivo `jest.config.js` configure
+      ```bash
        module.exports = {
          testEnvironment: 'jest-environment-jsdom',
          setupFilesAfterEnv: ['<rootDir>/.jest/setupTests.js'],
@@ -114,13 +110,13 @@
            '\\.(css|less|sass|scss)$': 'identity-obj-proxy',
          },
        }
-       ```
+      ```
    ✔️**4.3** Instale as bibliotecas babel:
      ```bash
      npm i -D @babel/core @babel/preset-env @babel/preset-react babel-jest
      ```
    ✔️**4.4** Crie o arquivo `babel.config.json`:
-     ```json
+    ```bash
      {
        "presets": [
          ["@babel/preset-env", { "targets": { "esmodules": true } }],
