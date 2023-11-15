@@ -3,6 +3,7 @@
 ## Passo 1: ⚙️ Configuração Inicial 💻
 
 1. **Crie um projeto React⚛️ com TS usando Vite**
+
    ✔️ **1.1** Execute o comando: `npm create vite@latest`
      ✔️ **1.1.1** Project name:  'nome do projeto'
      ✔️ **1.1.2** Select a framework:  'React'
