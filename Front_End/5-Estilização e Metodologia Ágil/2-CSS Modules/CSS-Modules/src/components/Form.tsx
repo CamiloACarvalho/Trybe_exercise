@@ -1,32 +1,29 @@
+import sytle from './form.module.css';
+
 function Form() {
   return (
     <>
-      <div className="aside">
+      <div className={ sytle.aside }>
         <p>test</p>
       </div>
-      <div className="container">
-        <div className="input-group mb-3">
+      <div className={ sytle.container }>
+        <div
+          className="form-floating mb-3"
+          id={ sytle.firstInput }
+        >
           <input
-            type="text"
+            type="email"
             className="form-control"
-            placeholder="Insira o seu login"
-            aria-label="Insira o seu login"
-            aria-describedby="basic-addon2"
+            id="floatingInput"
+            placeholder="name@example.com"
           />
-          <span
-            className="input-group-text"
-            id="basic-addon2"
-          >
-            @example.com
-          </span>
         </div>
-        <div className="input-group mb-3">
+        <div className="form-floating mb-3">
           <input
-            type="password"
+            type="email"
             className="form-control"
-            placeholder="Insira sua senha"
-            aria-label="Insira sua senha"
-            aria-describedby="basic-addon2"
+            id="floatingInput"
+            placeholder="name@example.com"
           />
         </div>
         <button
