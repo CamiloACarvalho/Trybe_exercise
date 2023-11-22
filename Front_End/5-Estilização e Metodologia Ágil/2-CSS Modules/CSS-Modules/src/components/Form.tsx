@@ -1,5 +1,4 @@
 import sytle from './form.module.css';
-import linkedin from './public/linkedin.svg';
 
 function Form() {
   return (
