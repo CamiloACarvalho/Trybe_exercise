@@ -21,18 +21,31 @@
   --font-text: 'roboto monospace';
 }
 
-body {
-  min-height: 100vh;
-  background: var(--cor-fundo2);
-}
-
-.container {
+.aside {
+  height: 100vh;
+  width: 200px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  background: var(--cor-principal);
-  width: 600px;
-  height: 500px;
-  margin: auto;
+  background: var(--cor-destaque2);
+}
+
+.linkedin {
+  width: 30px;
+}
+
+.github {
+  width: 30px;
+}
+
+.slack {
+  width: 30px;
+}
+
+.discord {
+  width: 30px;
+}
+
+.instagram {
+  width: 30px;
 }
