@@ -17,8 +17,8 @@
   --cor-destaque2: #45b2c9;
   --cor-fundo2: #1e1637;
 
-  --font-title: 'Roboto','Open Sans', 'Helvetica Neue', 'sans-serif';
-  --font-text: 'roboto monospace';
+  --font-title: 'Roboto Slab','Open Sans', 'Helvetica Neue', 'sans-serif';
+  --font-text: 'Roboto Monospace','Open Sans', 'Helvetica Neue', 'sans-serif';
 }
 
 body {
@@ -32,7 +32,54 @@ body {
   align-items: center;
   justify-content: center;
   background: var(--cor-principal);
-  width: 600px;
-  height: 500px;
+  width: 50vw;
+  height: 700px;
   margin: auto;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 20px;
+  font-family: var(--font-title);
+  font-size: 2.5rem;
+}
+
+.paragraph {
+  font-family: var(--font-text);
+  font-size: 1.25rem;
+  list-style-type: square;
+}
+
+.inputName {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 10px;
+}
+
+.inputText {
+  width: 400px;
+  height: 35px;
+  border-radius: 7px;
+  margin: 7px;
+}
+
+.list {
+  list-style-type: none; /* Remover o marcador padrão */
+  padding-left: 0; /* Remover o recuo padrão */
+}
+
+.list li {
+  padding-left: 1.5em; /* Adicionar espaço para o ícone */
+  position: relative;
+}
+
+.list li::before {
+  content: '\f105'; /* Código do ícone Font Awesome (substitua pelo ícone desejado) */
+  font-family: 'Font Awesome 5 Free'; /* Nome da fonte */
+  font-size: 1.2em; /* Tamanho do ícone */
+  color: #007bff; /* Cor do ícone */
+  position: absolute;
+  left: 0;
+  top: 0;
 }

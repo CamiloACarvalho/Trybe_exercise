@@ -21,8 +21,12 @@ function Form({ handleSubmit }: FormProps) {
         <header>
           <h1 className={ styles.title }>Olá, seja bem vindo 😃</h1>
         </header>
-        <div className={ styles.inputContainer }>
-          <p>Me diga seu nome ou como gostaria de ser chamado(a)?</p>
+        <div className={ styles.inputName }>
+          <p
+            className={ styles.paragraph }
+          >
+            Me diga seu nome ou como gostaria de ser chamado(a)?
+          </p>
           <input
             id="name"
             type="text"
@@ -30,8 +34,14 @@ function Form({ handleSubmit }: FormProps) {
             className={ styles.inputText }
           />
         </div>
-        <div className={ styles.inputContainer }>
-          <p>Com o que você trabalha?</p>
+        <div className={ styles.inputWork }>
+          <ul className={ styles.list }>
+            <li
+              className={ styles.paragraph }
+            >
+              Com o que você trabalha?
+            </li>
+          </ul>
           <select>
             <option value="Estudante">Estudante</option>
             <option value="Desenvolvedor">Desenvolvedor</option>
@@ -39,8 +49,8 @@ function Form({ handleSubmit }: FormProps) {
             <option value="Recrutador">Recrutador</option>
           </select>
         </div>
-        <div className={ styles.textArea }>
-          <p>
+        <div className={ styles.inputFeedback }>
+          <p className={ styles.paragraph }>
             O que gostaria de compartilhar?
             Alguma sugestão, elogio, fique a vontade 🙃
           </p>
@@ -58,13 +68,14 @@ function Form({ handleSubmit }: FormProps) {
         />
         <label
           htmlFor="validation"
-          className={ styles.validate }
+          className={ styles.paragraph }
         >
           ⚠️ Suas informações não serão divulgadas!
           O intuíto é apenas conhecer o público com a finalidade
           de gerar contúdos mais direcionados 🙂
         </label>
         <button
+          className={ styles.button }
           type="submit"
           disabled={ !validation }
         >
