@@ -35,13 +35,9 @@ function Form({ handleSubmit }: FormProps) {
           />
         </div>
         <div className={ styles.inputWork }>
-          <ul className={ styles.list }>
-            <li
-              className={ styles.paragraph }
-            >
-              Com o que você trabalha?
-            </li>
-          </ul>
+          <p className={ styles.paragraph }>
+            ✳️ Com o que você trabalha?
+          </p>
           <select>
             <option value="Estudante">Estudante</option>
             <option value="Desenvolvedor">Desenvolvedor</option>

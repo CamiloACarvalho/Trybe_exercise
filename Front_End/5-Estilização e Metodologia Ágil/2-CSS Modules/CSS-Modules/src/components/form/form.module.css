@@ -54,6 +54,7 @@ body {
   display: flex;
   align-items: center;
   flex-direction: column;
+  text-align: left;
   margin: 10px;
 }
 
@@ -64,22 +65,6 @@ body {
   margin: 7px;
 }
 
-.list {
-  list-style-type: none; /* Remover o marcador padrão */
-  padding-left: 0; /* Remover o recuo padrão */
-}
-
-.list li {
-  padding-left: 1.5em; /* Adicionar espaço para o ícone */
-  position: relative;
-}
-
-.list li::before {
-  content: '\f105'; /* Código do ícone Font Awesome (substitua pelo ícone desejado) */
-  font-family: 'Font Awesome 5 Free'; /* Nome da fonte */
-  font-size: 1.2em; /* Tamanho do ícone */
-  color: #007bff; /* Cor do ícone */
-  position: absolute;
-  left: 0;
-  top: 0;
+.inputWork {
+  
 }
