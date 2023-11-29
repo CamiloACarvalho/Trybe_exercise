@@ -39,7 +39,7 @@ body {
 
 .title {
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   font-family: var(--font-title);
   font-size: 2.5rem;
 }
@@ -48,6 +48,7 @@ body {
   font-family: var(--font-text);
   font-size: 1.25rem;
   list-style-type: square;
+  margin-left: 10px;
 }
 
 .inputName {
@@ -66,5 +67,66 @@ body {
 }
 
 .inputWork {
-  
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: left;
+  margin: 10px;
+}
+
+select {
+  width: 400px;
+  height: 35px;
+  border-radius: 7px;
+  margin: 7px;
+
+}
+
+.inputFeedback {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: left;
+  margin: 10px;
+}
+
+textarea {
+  width: 400px;
+  height: 100px;
+  border-radius: 7px;
+  margin: 7px;
+}
+
+.agree {
+  display: flex;
+  align-items: center;
+  margin: 10px;
+}
+
+.agreement {
+  font-family: var(--font-text);
+  font-size: 0.8rem;
+}
+
+.send {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.button {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 120px;
+  height: 40px;
+  border-radius: 7px;
+  margin: 15px;
+  font-family: var(--font-text);
+  font-size: 1.3rem;
+  background-color: #a58eea;
+  box-shadow: var(--cor-fundo2);
+}
+
+.button:hover {
+  background-color: #937bdb;
 }
