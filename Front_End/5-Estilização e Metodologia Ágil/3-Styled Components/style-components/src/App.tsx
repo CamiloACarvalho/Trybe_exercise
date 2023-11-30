@@ -1,14 +1,14 @@
 import { useState } from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
+import { ThemeProvider } from 'styled-components';
 import ViewTasks from './components/view-tasks/view-tasks';
 import ListTasks from './components/list-tasks/list-tasks';
 
 import { Task } from './types';
-import GlobalStyles from './styles/global-styles';
-import { ThemeProvider } from 'styled-components';
-import dark from './styles/themes/dark';
 import light from './styles/themes/light';
+import GlobalStyles from './styles/global-styles';
+import dark from './styles/themes/dark';
 
 function App() {
   const [isDarkMode, setIsDarkMode] = useState(false);
@@ -18,7 +18,7 @@ function App() {
 
   const changeTheme = () => {
     setIsDarkMode(!isDarkMode);
-  }
+  };
 
   const toggleStatusTask = (currentTask: Task) => {
     const newTasks = allTasks.map((task) => {
@@ -49,8 +49,8 @@ function App() {
 
   return (
     <BrowserRouter>
-    <ThemeProvider theme={ isDarkMode ? dark : light }>
-      <GlobalStyles />
+      <ThemeProvider theme={ isDarkMode ? dark : light }>
+        <GlobalStyles />
         <Routes>
           <Route
             path="/"
@@ -88,7 +88,7 @@ function App() {
             />
           </Route>
         </Routes>
-    </ThemeProvider>
+      </ThemeProvider>
 
     </BrowserRouter>
   );
