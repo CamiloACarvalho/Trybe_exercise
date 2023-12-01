@@ -6,16 +6,22 @@
   <meta charset="UTF-8" />
   <link rel="icon" type="image/svg+xml" href="/vite.svg" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<!--   Sobre o Redux, é feito em HTML, JS e CSS puro, logo, precisa 'linkar' o style.css com o HTML -->
   <link rel="stylesheet" href="./style.css" />
 </head>
 
 <body>
+<!--   Código normal de HTML -->
   <main id="wrapper" class="light">
+<!--     Trouxe a imagem da lâmpada -->
     <img id="light-bulb" src="img/light.png" alt="lampada" />
+<!--     Criou um botão e atribuiu um id para aplicar estilização ou até mesmo buscar pele pelo DOM -->
     <button id="light-switch">
+<!--       Criou uma tah img para o interruptor. Como ele está dentro de button, ao clicar na imagem será como clicar no botão -->
       <img src="img/interruptor.png" alt="interruptor" />
     </button>
   </main>
+<!--   Aqui traz a ligação do HTML com o JS -->
   <script type="module" src="/src/main.ts"></script>
 </body>
 
